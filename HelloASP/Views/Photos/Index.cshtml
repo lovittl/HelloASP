@@ -1,0 +1,14 @@
+﻿@using HelloASP.Models
+@model IEnumerable<PhotoModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach(var p in Model)
+{
+    <p>
+        <img src="@p.URL" alt="@p.AltText" />
+    </p>
+}
+
